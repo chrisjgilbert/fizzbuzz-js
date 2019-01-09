@@ -12,7 +12,7 @@ describe('FizzBuzz', function() {
       expect(fizzbuzz.play(3)).toBe('Fizz')
     })
 
-    it('returns Fizz if it is divisible by 3', function() {
+    it('returns Fizz if it is divisible by 5', function() {
       expect(fizzbuzz.play(5)).toBe('Buzz')
     })
   })
