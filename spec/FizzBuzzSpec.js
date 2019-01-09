@@ -21,7 +21,7 @@ describe('FizzBuzz', function() {
     })
 
     it('returns the number if not divisible by 3, 5, or 15', function() {
-      expect(fizzbuzz.play(15)).toBe(7)
+      expect(fizzbuzz.play(7)).toBe(7)
     })
   })
 

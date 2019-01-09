@@ -6,16 +6,18 @@ FizzBuzz.prototype = {
       return 'FizzBuzz'
     } else if (this._divisibleBy5(number)) {
       return 'Buzz'
-    } else {
+    } else if (number % 3 === 0) {
       return 'Fizz'
+    } else {
+      return number
     }
   },
 
   _divisibleBy5: function(number) {
-    if (number % 5 ===0 ) return true
+    if (number % 5 === 0) return true
   },
 
   _divisibleBy15: function(number) {
-    if (number % 15 ===0 ) return true
+    if (number % 15 === 0) return true
   }
 }
