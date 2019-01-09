@@ -2,7 +2,9 @@ var FizzBuzz = function() {}
 
 FizzBuzz.prototype = {
   play: function(number) {
-    if (this._divisibleBy5(number)) {
+    if (number % 15 === 0) {
+      return 'FizzBuzz'
+    } else if (this._divisibleBy5(number)) {
       return 'Buzz'
     } else {
       return 'Fizz'
