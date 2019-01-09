@@ -19,6 +19,10 @@ describe('FizzBuzz', function() {
     it('returns FizzBuzz if it is divisible by 15', function() {
       expect(fizzbuzz.play(15)).toBe('FizzBuzz')
     })
+
+    it('returns the number if not divisible by 3, 5, or 15', function() {
+      expect(fizzbuzz.play(15)).toBe(7)
+    })
   })
 
 })
